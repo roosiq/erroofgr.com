@@ -1,0 +1,14 @@
+title: Ryan Cook
+email: r.k.cook@me.com
+url: "https://ryancook.name" # the base hostname & protocol for your site, e.g. http://example.com
+author: Ryan Cook
+twitter_username: ryancook_mba
+twitter:
+  username: ryancook_mba
+  card: summary
+github_username:  roosiq
+permalink: none
+
+collections:
+  notes:
+    output: true

@@ -1,0 +1,73 @@
+<!--HEADER
+<nav>
+  {% for item in site.data.navigation %}
+    <li {% if page.url == item.link %}class="current"{% endif %}><a href="{{ item.link }}" >{{ item.name }}</a>
+  {% endfor %}
+</nav>
+-->
+<!--
+<header data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+    <div id="particles-js" class="particles-main"></div>
+    <div class="uk-container">
+        <nav id="navbar" class="uk-navbar-container uk-navbar-transparent uk-margin header" uk-navbar>
+            <div class="uk-navbar-center">
+                <div class="uk-navbar-center-left uk-visible@m"><div>
+                    <ul class="uk-navbar-nav">
+                      {% for item in site.data.navleft %}
+                        <li {% if page.url contains item.link %}class="uk-active"{% endif %}><a href="{{ item.link }}" >{{ item.name }}</a>
+                      {% endfor %}
+                    </ul>
+                    </div></div>
+                <a class="uk-navbar-item uk-logo logo-main uk-text-middle" href="/">RYAN COOK</a>
+                <div class="uk-navbar-center-right uk-visible@m">
+                    <div>
+                      <ul class="uk-navbar-nav">
+                        {% for item in site.data.navright %}
+                          <li {% if page.url contains item.link %}class="uk-active"{% endif %}><a href="{{ item.link }}" >{{ item.name }}</a>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m">
+                <div class="uk-navbar-item">
+                    <a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon ratio="1.25" href="#offcanvas-nav"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+-->
+<!--/HEADER-->
+
+    <nav class="uk-navbar-container uk-navbar-transparent uk-margin uk-margin-remove-top uk-width-2-3@s uk-margin-auto" uk-navbar>
+        <div class="uk-navbar-left uk-light uk-padding-remove-top">
+            <a class="uk-navbar-item" href="/"><img style="height: 40px; width: 120px" src="../assets/images/logo-placeholder.jpg"></a>
+        </div>
+        <div class="uk-navbar-right uk-light uk-visible@s">
+            <ul class="uk-navbar-nav">
+                <li class=""><a href="#">About</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Roofing</a></li>
+                        <li><a href="#">Siding</a></li>
+                        <li><a href="#">Remodeling</a></li>
+                        <li><a href="#">Gutters</a></li>
+                        <li><a href="#">Windows</a></li>
+                    </ul>
+                </div>
+                
+                </li>
+                
+                <li><a href="#">Financing</a></li>
+                <li><a href="#">Emergency Repairs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right uk-light uk-hidden@s">
+            <a href="#offcanvas-nav" uk-toggle uk-icon="icon: menu; ratio: 2"></a>
+        </div>
+    </nav>
+{% include offcanvas.html %}
